@@ -1,17 +1,24 @@
 
 import './App.scss'
+import NotFound from './Pages/404/NotFound';
 import Landing from './Pages/landing/Landing'
+import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
 
-function App() {
+const App: React.FC=()=> {
 
 
   return (
-    <>
-      <div >
+    <Router>
+      {/* <div >
         <Landing/>
-   </div>
-    </>
-  )
+   </div> */}
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        {/* Add other routes here */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App

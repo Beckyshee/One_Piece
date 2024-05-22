@@ -26,11 +26,12 @@ const Landing = () => {
           <div className="genre">
             <span>Genre:</span> Shonen manga, Action manga, Comedy, Fantasy
           </div>
-        </div>
-        <div className="thumbnails">
-          <img src={zoro} alt="Thumbnail 1" />
-          <img src={ace} alt="Thumbnail 2" />
-          <img src={shanks} alt="Thumbnail 3" />
+
+          <div className="thumbnails">
+            <img src={zoro} alt="Thumbnail 1" />
+            <img src={ace} alt="Thumbnail 2" />
+            <img src={shanks} alt="Thumbnail 3" />
+          </div>
         </div>
       </div>
     </div>

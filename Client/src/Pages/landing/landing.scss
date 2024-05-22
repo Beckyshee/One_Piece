@@ -1,4 +1,5 @@
 .landing-container {
+    min-height: 100vh;
   background-image: url('../../assets//background.jpeg');
   background-size: cover;
   background-position: center;
@@ -40,20 +41,26 @@
 
     .rating-genre {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: center;
+
       gap: 20px;
       margin-top: 30px;
 
-      .rating,
-      .genre {
+      .rating span,
+      .genre span{
+        display: flex;
+        flex-direction: row;
         font-size: 18px; 
       }
     }
 
-    .thumbnails {
+   .thumbnails {
       display: flex;
       justify-content: center;
       gap: 20px;
+      margin-top: 40px;
+
       margin-top: 40px;
 
       img {
